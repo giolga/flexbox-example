@@ -1,0 +1,49 @@
+body {
+    min-height: 800px;
+    border: 8px solid #000;
+    display: flex;
+    /* justify-content: space-evenly; 1*/
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    /* flex-direction: row-reverse; 2*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* gap: 20px; 3*/
+    /* column-gap: 10px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-content: space-evenly; */
+
+    gap: 20px;
+
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#box-1 {
+    /* flex-shrink: 0; 4 */
+    /* flex-grow: 1; 5*/
+    align-self: center;
+    margin-right: auto;
+}
+
+.box {
+    /* flex-shrink: 1; flex grow is the opposite of shrinking*/
+    /* flex-grow: 1; 4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #0071ff;
+    font-size: 40px;
+}
+
+@media (max-width: 575px) {
+    body {
+        flex-wrap: wrap;
+    }
+}
